@@ -1,0 +1,31 @@
+create table details
+(
+    id          int auto_increment
+        primary key,
+    update_time datetime    null comment '����������ʱ��',
+    province    varchar(15) null comment 'ʡ',
+    city        varchar(15) null comment '��',
+    confirm     int         null comment '�ۼ�ȷ��',
+    confirm_add int         null comment '����ȷ��',
+    heal        int         null comment '�ۼ�����',
+    dead        int         null comment '�ۼ�����'
+)
+    charset = utf8mb4;
+
+
+*******************************************************************
+create table history
+(
+    ds          datetime not null comment '����'
+        primary key,
+    confirm     int      null comment '�ۼ�ȷ��',
+    confirm_add int      null comment '��������ȷ��',
+    suspect     int      null comment 'ʣ������',
+    suspect_add int      null comment '������������',
+    heal        int      null comment '�ۼ�����',
+    heal_add    int      null comment '������������',
+    dead        int      null comment '�ۼ�����',
+    dead_add    int      null comment '������������'
+)
+    charset = utf8mb4;
+
