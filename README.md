@@ -25,4 +25,4 @@ jquery + ajax技术实现实时数据更新
 
 3. 后端部分设计
 utils.py 与数据库交互
-flask的基本运用
+flask的基本运用：static文件夹放css和js文件，templates文件夹下放html页面
